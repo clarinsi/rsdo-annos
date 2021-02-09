@@ -34,10 +34,8 @@
     </encodingDesc>
     <profileDesc>
       <langUsage>
-        <language ident="sl" xml:lang="sl">slovenski</language>
-        <language ident="en" xml:lang="sl">angleški</language>
-        <language ident="sl" xml:lang="en">Slovenian</language>
-        <language ident="en" xml:lang="en">English</language>
+        <language ident="sl" xml:lang="sl">slovenščina</language>
+        <language ident="en" xml:lang="sl">angleščina</language>
       </langUsage>
     </profileDesc>
     <revisionDesc>
@@ -48,11 +46,11 @@
     <front>
       <titlePage>
         <docTitle>
-          <titlePart type="main"><ref target="https://github.com/clarinsi/rsdo-annos">RSDO-annos</ref></titlePart>
+          <titlePart type="main"><ref target="https://github.com/clarinsi/rsdo-annos">Anotacije RSDO</ref></titlePart>
           <titlePart type="sub">Opis označevalnih ravni korpusov projekta RSDO</titlePart>
         </docTitle>
         <docEdition>0.1</docEdition>
-        <byline>Tomaž Erjavec, Simon Krek, Polona Gantar, Darja Fišer, Špela Arhard Holdt,
+        <byline>Tomaž Erjavec, Simon Krek, Polona Gantar, Darja Fišer, Špela Arhard Holdt, Jaka Čibej,
         ...</byline>
       </titlePage>
       <p></p>
@@ -71,22 +69,81 @@
       </div>
       
       <div xml:id="sec-tok">
-	<head>Tokenizacija</head>
-	
-	<p>Tokenizacij je...</p>
+	<head>Tokenizacija in stavčna segmentacija</head>
+	<divGen type="subtoc"/>
+	<div xml:id="sec-tok-intro">
+	  <head>Tokenizacija in stavčna segmentacija</head>
+	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil) v
+	  besedilu in je večinoma združena s stavčno segmentacijo, ki razdeli besedilo na
+	  posamezne stavko oz. povedi.  Tokenizacija je na prvi pogled enostavna, vendar so
+	  v jeziku pojavi, ki naredijo natančno tokenizacijo problematično:
+	  <list>
+	    <li>Krajšave, kot so npr. <q>dr.</q>, <q>itd.</q>, saj je pika del pojavnice, ob
+	    tem pa pika sicer tudi zaključi stavek, pri krajšavah pa to ni nujno. Poleg tega
+	    so krajšave lahko tudi dvoumne z navadnimi besedami, npr. <q>xxx.</q> ... </li>
+	    <li>Pri besedah, ki vsebujejo ločila (kot npr. <q>le-teh</q> ali <q>m²</q>) ni a
+	    priori jasno ali naj bodo tokenizirani v več pojavnic, ali v eno. To je
+	    problematično kadar se uporabnik ne zaved načel označevanja, in išče eno
+	    pojavnico, kjer sta dve ali več, še bolj pa, če med sabo primerjamo korpuse, ki
+	    so bili označeni z orodji, ki implementirajo različna načela tokenizacije.</li>
+	    <li>V nestandardnem jeziku, posebej na družbenih omrežjih, se pogosto ispušča
+	    presledke med ločilom in naslednjo besedo, kot npr. <q>Ti,nehi.Drgač bo
+	    hudo!</q>, kar zelo zaplete tokenizacijo, saj se ločila sicer lahko pojavljajo
+	    tudi znotraj besed, npr. <q>3,4,5-heksaklorofen</q> ali <q>www.lep.si</q>.</li>
+	  </list>
+	  </p>
+	  <p>Iz teh razlogov je dobro imeti jasne in konsistentne specifikacije za
+	  tokenizacijo in programe, ki jih implementirajo, vsi korpusi pa naj bi bilo
+	  tokenizirani glede na iste specifikacije.</p>
+	  <p>Ker se tokenizacija standardne in nestandardne slovenščine v marsičem razlikujeta,
+	  ju obravnavamo posebej.</p>
+	</div>
 	
 	<div xml:id="sec-tokstd">
           <head>Tokenizacija sodobne standardne sloveščine</head>
-          <p></p>
+	  <div xml:id="sec-tokstd-tools">
+            <head>Orodja za tokenizacijo sodobne standardne sloveščine</head>
+            <p></p>
+	  </div>
+
+	  <div xml:id="sec-tokstd-specs">
+            <head>Specifikacije za tokenizacijo sodobne standardne sloveščine</head>
+            <p></p>
+	  </div>
+
+	  <div xml:id="sec-tokstd-guide">
+            <head>Smernice za tokenizacijo sodobne standardne sloveščine</head>
+            <p></p>
+	  </div>
+
 	</div>
 	
 	<div xml:id="sec-toknonstd">
-          <head>Tokenizacija sodobne nestandardne</head>
-          
-          <p></p>
+          <head>Tokenizacija sodobne nestandardne slovenščine</head>
+	  <div xml:id="sec-toknstd-tools">
+            <head>Orodja za tokenizacijo sodobne nestandardne sloveščine</head>
+            <p></p>
+	  </div>
+
+	  <div xml:id="sec-toknstd-specs">
+            <head>Specifikacije za tokenizacijo sodobne standardne sloveščine</head>
+            <p></p>
+	  </div>
+
+	  <div xml:id="sec-toknstd-guide">
+            <head>Smernice za tokenizacijo sodobne standardne sloveščine</head>
+            <p></p>
+	  </div>
 	</div>
 	
+	<div xml:id="sec-tok-bib">
+          <listBibl>
+            <head>Bibliografija</head>
+	    <bibl>Simon Krek. Doktorska disertacija</bibl>
+	  </listBibl>
+	</div>
       </div>
+      
     </body>
   </text>
 </TEI>
