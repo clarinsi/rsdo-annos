@@ -49,9 +49,17 @@
           <titlePart type="main"><ref target="https://github.com/clarinsi/rsdo-annos">Anotacije RSDO</ref></titlePart>
           <titlePart type="sub">Opis označevalnih ravni korpusov projekta RSDO</titlePart>
         </docTitle>
-        <docEdition>0.1</docEdition>
-        <byline>Tomaž Erjavec, Simon Krek, Polona Gantar, Darja Fišer, Špela Arhard Holdt, Jaka Čibej,
-        ...</byline>
+        <docEdition>Različica 0.1</docEdition>
+        <byline>
+	  Tomaž Erjavec,
+	  Simon Krek,
+	  Polona Gantar,
+	  Darja Fišer,
+	  Špela Arhard Holdt,
+	  Jaka Čibej,
+          Nikola Ljubešić,
+	  ...
+	</byline>
       </titlePage>
       <p></p>
       <divGen type="toc"/>
@@ -73,7 +81,7 @@
 	<docAuthor>Simon Krek</docAuthor>
 	<docAuthor>Tomaž Erjavec</docAuthor>
 	<docAuthor>Nikola Ljubešić</docAuthor>
-	<divGen type="subtoc"/>
+	<divGen type="subToc"/>
 	<div xml:id="sec-tok-intro">
 	  <head>Uvod v tokenizacijo in stavčno segmentacijo</head>
 	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil) v
