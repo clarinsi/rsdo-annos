@@ -61,19 +61,19 @@
 	  ...
 	</byline>
       </titlePage>
-      <p></p>
       <divGen type="toc"/>
     </front>
     <body>
       <div xml:id="sec-intro">
         <head>Uvod</head>
-        <p></p>
         
 	<div xml:id="sec-struct">
           <head>Struktura opisa</head>
-          <p></p>
         </div>
         
+	<div xml:id="sec-workflow">
+          <head>Postopek dopolnjevanja opisa</head>
+        </div>
       </div>
       
       <div xml:id="sec-tok">
@@ -82,10 +82,13 @@
 	<divGen type="subtoc"/>
 	<div xml:id="sec-tok-intro">
 	  <head>Uvod v tokenizacijo in stavčno segmentacijo</head>
-	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil) v
-	  besedilu in je večinoma združena s stavčno segmentacijo, ki razdeli besedilo na
-	  posamezne stavko oz. povedi.  Tokenizacija je na prvi pogled enostavna, vendar so
-	  v jeziku pojavi, ki naredijo natančno tokenizacijo problematično:
+	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil)
+	  v besedilu. Tokenizacija je tipično združena s stavčno segmentacijo, ki razdeli
+	  besedilo na posamezne stavko oz. povedi in v nadaljevanju bomo z izrazom
+	  <q>tokenizacija</q> mislili tudi na stavčno segmentacijo.</p>
+
+	  <p>Tokenizacija je na prvi pogled enostavna, vendar so v jeziku pojavi, ki
+	  naredijo natančno tokenizacijo problematično:
 	  <list>
 	    <item>Krajšave, kot so npr. <q>dr.</q>, <q>itd.</q>, saj je pika del pojavnice, ob
 	    tem pa pika sicer tudi zaključi stavek, pri krajšavah pa to ni nujno. Poleg tega
@@ -101,11 +104,12 @@
 	    tudi znotraj besed, npr. <q>3,4,5-heksaklorofen</q> ali <q>www.lep.si</q>.</item>
 	  </list>
 	  </p>
-	  <p>Iz teh razlogov je dobro imeti jasne in konsistentne specifikacije za
-	  tokenizacijo in programe, ki jih implementirajo, vsi korpusi pa naj bi bilo
+	  <p>Zaradi teh razlogov je dobro imeti jasne in konsistentne specifikacije za
+	  tokenizacijo in programe, ki jih implementirajo, vsi korpusi pa naj bi bili
 	  tokenizirani glede na iste specifikacije.</p>
-	  <p>Ker se tokenizacija standardne in nestandardne slovenščine v marsičem razlikujeta,
-	  ju obravnavamo posebej.</p>
+	  
+	  <p>Ker se tokenizacija standardne in nestandardne slovenščine v marsičem
+	  razlikujeta, ju obravnavamo posebej.</p>
 	</div>
 	
 	<div xml:id="sec-tokstd">
@@ -123,7 +127,7 @@
 	  <div xml:id="sec-tokstd-specs">
             <head>Specifikacije za tokenizacijo sodobne standardne sloveščine</head>
             <p>Specifikacije (v smislu datotek s popolnim naborom strojno berljivih pravil
-            za tokenizacijo in segmentacio stavkov slovenskega jezika) ne obstajajo, kot
+            za tokenizacijo in segmentacijo stavkov slovenskega jezika) ne obstajajo, kot
             nadomestek zanje pa lahko služijo naslednji viri:
 	    <list>
 	      <item>Korpus ssj500k, kjer je bila tokenizacija in stavčna segmentacija ročno preverjena
@@ -148,24 +152,175 @@
 	    </list>
 	    </p>
 	  </div>
-
 	</div>
 	
 	<div xml:id="sec-toknonstd">
           <head>Tokenizacija sodobne nestandardne slovenščine</head>
+	  <p>Tokenizacija in stavčno segmentiraje nestandardne sloveščine, kot jo srečamo
+	  na družbenih omrežjih, in ki je bila podrobno obravnavana v okviru projekta <ref
+	  target="https://nl.ijs.si/janes/">Janes</ref>, je, zaradi izpuščanja presledkov,
+	  bistveno težja, kot tudi bolj podvržena napakam, kot pa standardna
+	  slovenščina. Zato bodo tudi orodja, ki so prilagojena na nestandardni jezik,
+	  tokenizirala manj natančno. </p>
 	  <div xml:id="sec-toknstd-tools">
             <head>Orodja za tokenizacijo sodobne nestandardne sloveščine</head>
-            <p></p>
+            <p>Za tokenizacijo in stavčno segmentacijo nestandardne sloveščine trentuno
+            obstaja samo eno orodje:
+	    <list>
+	      <item>reldi-tokeniser:
+	      <ref target="https://github.com/clarinsi/reldi-tokeniser">clarinsi/reldi-tokeniser</ref>,
+	      pri čemer ga je potrebno uporabiti z zastavico <q>-n</q></item>
+	    </list>
+	    </p>
 	  </div>
 
 	  <div xml:id="sec-toknstd-specs">
-            <head>Specifikacije za tokenizacijo sodobne standardne sloveščine</head>
-            <p></p>
+            <head>Specifikacije za tokenizacijo sodobne nestandardne sloveščine</head>
+            <p>Specifikacije (v smislu datotek s popolnim naborom strojno berljivih pravil
+            za tokenizacijo in segmentacijo stavkov slovenskega jezika) ne obstajajo, kot
+            nadomestek zanje pa lahko služi naslednji vir:
+	    <list>
+	      <item>Korpus Janes-Norm, kjer je bila tokenizacija in stavčna segmentacija ročno preverjena
+	      (<ref target="#Janes-Norm">Erjavec et al., 2016</ref>).</item>
+	    </list>
+	    </p>
 	  </div>
 
 	  <div xml:id="sec-toknstd-guide">
-            <head>Smernice za tokenizacijo sodobne standardne sloveščine</head>
-            <p></p>
+            <head>Smernice za tokenizacijo sodobne nestandardne sloveščine</head>
+            <p>S tokenizacijo in stavčno segmentacijo sodobne nestandardne sloveščine sta
+            posvečeni poglavji <q>Stavčna segmentacija</q> in <q>Tokenizacija</q> Smernic
+            Janes (<ref target="#Janes">Čibej et al., 2016</ref>), ki ju, rahlo prilagojena,
+	    podajamo v nadaljevanju.</p>
+
+	    <div xml:id="sec-toknstd-guide-tok">
+	      <head>Tokenizacija JANES</head>
+	      <list type="ordered">
+		<item>Na ravni tokenizacije samo razdružujemo ali združujemo tiste
+		pojavnice, ki jih je napačno združil ali ločil tokenizator. Napake se
+		pojavljajo zaradi ločil in posebnih znakov (simbolov), npr. tokenizator
+		loči besedo, vezaj in končnico na tri pojavnice ali ne loči števke od
+		znaka za odstotke (<q>IBM - ja</q> → <q>IBM-ja</q>, <q>5%</q> → <q>5
+		%</q>).</item>
+		<item>Na ravni tokenizacije ničesar ne popravljamo v zapisu (šumnikov,
+		obrazil ipd.), temveč samo združujemo ali razdružujemo (<q>življ .</q> →
+		<q>življ.</q>, <q>Nemčija-Grčija</q> → <q>Nemčija - Grčija</q>).</item>
+		<item>Pri tokenizaciji ne popravljamo namenoma ali pomotoma skupaj
+		oz. narazen zapisanih besed (<q>hodildomov</q>, <q>porka duš</q>). Te
+		razdružimo ali združimo na ravni normalizacije.</item>
+	      </list>
+	      <p>Težavni primeri:
+	      <list type="ordered">
+		<item>Emotikoni
+		<list type="ordered">
+		  <item>Če je tokenizator emotikon razdelil na več pojavnic, ga združimo
+		  (<q>: |</q> → <q>:|</q>).</item>
+		  <item>Več zaporednih emotikonov obravnavamo kot eno pojavnico in jih ne
+		  delimo (<hi rend="italic"><q>:):):)</q></hi>). Če jih je tokenizator
+		  razdelil, v besedilu pa so stični, jih združimo v eno pojavnico (<q>:)\
+		  :**</q> → <q>:):**</q>).</item>
+		</list>
+		</item>
+		<item>Okrajšave
+		<list type="ordered">
+		  <item>Okrajšava in njena pika naj bosta ena pojavnica (<q>dr .</q> →
+		  <q>dr.</q>).</item>
+		  <item>Če tokenizator okrajšave ni prepoznal, bo njeno piko ločil v
+		  posebno pojavnico in jo tudi obravnaval kot konec stavka. V tem primeru
+		  popravimo tako tokenizacijo kot segmentacijo (če pa okrajšava dejansko
+		  konča stavek, z njo stavek tudi zaključimo).</item>
+		</list>
+		</item>
+		<item>Skupaj zapisani nizi
+		<list type="ordered">
+		  <item>Zaradi ločil napačno skupaj zapisane nize ločimo na več pojavnic
+		  (<q>turčija-grčija</q> → <q>turčija - grčija</q>).</item>
+		  <item>Pri tokenizaciji ne popravljamo skupaj zapisanih nizov z
+		  manjkajočimi presledki (<q>hodildomov</q>). Te popravljamo pri
+		  normalizaciji.</item>
+		</list>
+		</item>
+		<item>Narazen napisani nizi
+		<list type="ordered">
+		  <item>Nize, ki jih je tokenizator napačno ločil na več pojavnic
+		  (npr. tropičje na tri posamezne pike), združimo. To <hi
+		  rend="italic">ne</hi> velja za besede, ki jih je napačno narazen napisal
+		  avtor (npr. <q>porka duš</q>). Te združimo na ravni normalizacije
+		  (<q>porka duš</q> → <q>porkaduš</q>).</item>
+		</list>
+		</item>
+		<item>Nizi iz številk in končnih črk ali simbolov
+		<list type="ordered">
+		  <item>Napačno tokenizirane nize tipa <q>2 x</q>, <q>3 x</q>, <q>13 -
+		  ih</q>, <q>12 - ih</q>, združujemo v eno pojavnico (<q>2x</q>,
+		  <q>3x</q>, <q>13-ih</q>, <q>12-ih</q>). To ne velja za enote in druge
+		  simbole (<q>20 km</q>, <q>40 €</q>, <q>50 %</q>, <q>12 +</q>), ki naj
+		  bodo ločene pojavnice ne glede na to, ali so zapisane skupaj ali
+		  narazen.</item>
+		  <item>V primerih tipa <q>27\ ih</q> na ravni tokenizacije pojavnici samo
+		  združimo (<q>27ih</q>), vezaj pa dodamo šele pri normalizaciji
+		  (<q>27-ih</q>).</item>
+		</list>
+		</item>
+	      </list>
+	      </p>
+	    </div>
+	    
+	    <div xml:id="sec-toknstd-guide-sent">
+	      <head>Stavčna segmentacija JANES</head>
+	      <list type="ordered">
+		<item>Če del tvita deluje kot samostojen stavek, ga tako tudi obravnavamo
+		<note>V smernicah konec stavka za lažjo predstavo označujemo s simbolom
+		¶.</note> (<q>@multikultivator Najbrž ne . ¶ :) ¶ Kot rečeno : bolje BO
+		. ¶ Zrihtamo , ko utegnemo . ¶ ( PS : tudi v veselje " konkurence "
+		;)</q>.
+		</item>
+		<item>Merilo za konec stavka je predvsem ločilo, ki deluje kot končno v¸
+		stavku, npr. pika, klicaj, vprašaj, narekovaj ali večpičje (<q>Kaj praviš
+		? ¶ Aha !</q>).</item>
+		<item>Če ni dobrega razloga, da nekaj obravnavamo kot dva stavka, naj
+		ostane eden (<q>@urosgruber pri meni naloži CSS .. kar pa ne pomeni , da
+		stran zgleda lepo :)</q> → en stavek, ker večpičje deluje bolj kot vejica,
+		ne kot pika).</item>
+		<item>Konec tvita je avtomatično tudi konec stavka, zato tega ne označujemo.</item>
+	      </list>
+	      <p>
+		Težavni primeri:
+		<list type="ordered">
+		  <item>Večpičje
+		  <list type="ordered">
+		    <item>¸Ponavadi je končno ločilo (<q>@SLO_Super_Visor po moje se jo
+		    izogiba kot hudič križa. ¶ Glavn da on spet laja … ¶ :-)))))</q>).</item>
+		    <item>Včasih označuje zgolj elipso ali zamolk sredi stavka – v
+		    takšnem primeru ni končno ločilo /<q>To se mi zdi
+		    ... neumno.</q>).</item>
+		  </list>
+		  </item>
+		  <item>Imena (<q>@ime</q>), emotikoni (<q>\o/</q>) ali emojiji (<q>👳</q>)
+		    heštegi (<q>#hešteg</q>)
+		    <list type="ordered">
+		      <item>Če se pojavljajo sredi stavka, so del stavka (<q>neka baka :)
+		      uleti pa praša če loh gre kr naprej</q>, <q>sej #tarca je pa dons kr
+		      ok</q>, <q>sej je rekla @Sandra d je treba to drgac</q>).</item>
+		      <item>Če se pojavljajo na začetku tvita, jih obravnavamo kot del
+		      prvega stavka (<q>@TadejTrcekTITO @lucijausaj @JJansaSDS titek, ne
+		      seri. odv. častno razsodišče je JE zgolj za odvetnike.</q>).
+		      </item>
+		      <item>Če nadomeščajo končno ločilo, zaznamujejo konec stavka (<q>kot
+		      da je to važn :)) ¶ nobenga to ne briga vec sploh</q>).</item>
+		      <item>Če sledijo končnemu ločilu, jih obravnavamo kot samostojen
+		      stavek (<q>Sonce, sneg in pot pod noge! ¶ :) ¶ Gremo v hribe!</q>).</item>
+		      <item>Če je pri koncu stavka nanizanih več imen, emotikonov ali
+		      heštegov, za konec stavka velja zadnji element (<q>itak ne morm
+		      sploh keša dvignt :) @tibonalta #broke</q> → konec stavka je hešteg
+		      #broke).
+		      </item>
+		    </list>
+		  </item>
+		</list>
+	      </p>
+	    </div>
+	    
 	  </div>
 	</div>
 	
@@ -177,6 +332,16 @@
 	  </listBibl>
           <listBibl>
             <head>Viri</head>
+	    <bibl xml:id="Janes">Jaka Čibej, Špela Arhar Holdt, Tomaž Erjavec, Darja
+	    Fišer, Katja Zupan, 2016. Smernice za označevanje računalniško posredovane
+	    komunikacije: tokenizacija, stavčna segmentacija, normalizacija, lematizacija
+	    in oblikoskladenjsko označevanje, v1.0.
+	    [<ref target="http://nl.ijs.si/janes/wp-content/uploads/2014/09/Janes-smernice-v1.0.pdf">pdf</ref>
+	    [<ref target="http://nl.ijs.si/janes/wp-content/uploads/2014/09/Janes-smernice-v1.0.docx">docx</ref>]</bibl>
+	    <bibl xml:id="Janes-Norm">Erjavec, Tomaž; Fišer, Darja; Čibej, Jaka and Arhar
+	    Holdt, Špela, 2016, CMC training corpus Janes-Norm 1.2, Slovenian language
+	    resource repository CLARIN.SI,
+	    <ref target="http://hdl.handle.net/11356/1084">http://hdl.handle.net/11356/1084</ref>.</bibl>
 	    <bibl xml:id="ssj500k2.2">Krek, Simon; et al., 2019, Training corpus ssj500k 2.2, Slovenian
 	    language resource repository CLARIN.SI,
 	    <ref target="http://hdl.handle.net/11356/1210">http://hdl.handle.net/11356/1210</ref>.</bibl>
