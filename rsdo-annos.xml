@@ -78,10 +78,7 @@
       
       <div xml:id="sec-tok">
 	<head>Tokenizacija in stavčna segmentacija</head>
-	<byline>Simon Krek, Tomaž Erjavec</byline>
-	<docAuthor>Simon Krek</docAuthor>
-	<docAuthor>Tomaž Erjavec</docAuthor>
-	<docAuthor>Nikola Ljubešić</docAuthor>
+	<byline>Simon Krek, Tomaž Erjavec, Nikola Ljubešić</byline>
 	<divGen type="subtoc"/>
 	<div xml:id="sec-tok-intro">
 	  <head>Uvod v tokenizacijo in stavčno segmentacijo</head>
