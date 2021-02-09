@@ -78,18 +78,18 @@
 	  posamezne stavko oz. povedi.  Tokenizacija je na prvi pogled enostavna, vendar so
 	  v jeziku pojavi, ki naredijo natančno tokenizacijo problematično:
 	  <list>
-	    <li>Krajšave, kot so npr. <q>dr.</q>, <q>itd.</q>, saj je pika del pojavnice, ob
+	    <item>Krajšave, kot so npr. <q>dr.</q>, <q>itd.</q>, saj je pika del pojavnice, ob
 	    tem pa pika sicer tudi zaključi stavek, pri krajšavah pa to ni nujno. Poleg tega
-	    so krajšave lahko tudi dvoumne z navadnimi besedami, npr. <q>xxx.</q> ... </li>
-	    <li>Pri besedah, ki vsebujejo ločila (kot npr. <q>le-teh</q> ali <q>m²</q>) ni a
+	    so krajšave lahko tudi dvoumne z navadnimi besedami, npr. <q>xxx.</q> ... </item>
+	    <item>Pri besedah, ki vsebujejo ločila (kot npr. <q>le-teh</q> ali <q>m²</q>) ni a
 	    priori jasno ali naj bodo tokenizirani v več pojavnic, ali v eno. To je
 	    problematično kadar se uporabnik ne zaved načel označevanja, in išče eno
 	    pojavnico, kjer sta dve ali več, še bolj pa, če med sabo primerjamo korpuse, ki
-	    so bili označeni z orodji, ki implementirajo različna načela tokenizacije.</li>
-	    <li>V nestandardnem jeziku, posebej na družbenih omrežjih, se pogosto ispušča
+	    so bili označeni z orodji, ki implementirajo različna načela tokenizacije.</item>
+	    <item>V nestandardnem jeziku, posebej na družbenih omrežjih, se pogosto ispušča
 	    presledke med ločilom in naslednjo besedo, kot npr. <q>Ti,nehi.Drgač bo
 	    hudo!</q>, kar zelo zaplete tokenizacijo, saj se ločila sicer lahko pojavljajo
-	    tudi znotraj besed, npr. <q>3,4,5-heksaklorofen</q> ali <q>www.lep.si</q>.</li>
+	    tudi znotraj besed, npr. <q>3,4,5-heksaklorofen</q> ali <q>www.lep.si</q>.</item>
 	  </list>
 	  </p>
 	  <p>Iz teh razlogov je dobro imeti jasne in konsistentne specifikacije za
@@ -103,17 +103,41 @@
           <head>Tokenizacija sodobne standardne sloveščine</head>
 	  <div xml:id="sec-tokstd-tools">
             <head>Orodja za tokenizacijo sodobne standardne sloveščine</head>
-            <p></p>
+	    <list>
+	      <item>Obeliks:
+	      <ref target="https://github.com/clarinsi/obeliks">github.com/clarinsi/obeliks</ref></item>
+	      <item>reldi-tokeniser:
+	      <ref target="https://github.com/clarinsi/reldi-tokeniser">clarinsi/reldi-tokeniser</ref></item>
+	    </list>
 	  </div>
 
 	  <div xml:id="sec-tokstd-specs">
             <head>Specifikacije za tokenizacijo sodobne standardne sloveščine</head>
-            <p></p>
+            <p>Specifikacije (v smislu datotek s popolnim naborom strojno berljivih pravil
+            za tokenizacijo in segmentacio stavkov slovenskega jezika) ne obstajajo, kot
+            nadomestek zanje pa lahko služijo naslednji viri:
+	    <list>
+	      <item>Korpus ssj500k, kjer je bila tokenizacija in stavčna segmentacija ročno preverjena
+	      (<ref target="#ssj500k2.2">Krek et al., 2019</ref>).</item>
+	      <item>Seznam krajšav slovenskega jezika
+	      <ref target="https://github.com/clarinsi/reldi-tokeniser/blob/master/sl.abbrev">sl.abbrev</ref>,
+	      ki je del orodja
+	      <ref target="https://github.com/clarinsi/reldi-tokeniser">clarinsi/reldi-tokeniser</ref>.
+	      </item>
+	    </list>
+	    </p>
 	  </div>
 
 	  <div xml:id="sec-tokstd-guide">
             <head>Smernice za tokenizacijo sodobne standardne sloveščine</head>
-            <p></p>
+            <p>Za tokenizacijo sodobne standardne sloveščine ni eksplicitnih smernic,
+            najbolj pa se jim približajo:
+	    <list>
+	      <item>Principi tokenizacije slovenskega jezika v projektu <q>Universal Dependencies</q>:
+	      <ref target="https://universaldependencies.org/sl/tokenization.html">universaldependencies.org/sl/tokenization.html</ref></item>
+	      <item>Doktorska disertacija Simon Kreka (<ref target="#krek-phd">Krek, 2011</ref>).</item>
+	    </list>
+	    </p>
 	  </div>
 
 	</div>
@@ -138,8 +162,15 @@
 	
 	<div xml:id="sec-tok-bib">
           <listBibl>
+            <head>Viri</head>
+	    <bibl xml:id="ssj500k2.2">Krek, Simon; et al., 2019, Training corpus ssj500k 2.2, Slovenian
+	    language resource repository CLARIN.SI,
+	    <ref target="http://hdl.handle.net/11356/1210">http://hdl.handle.net/11356/1210</ref>.</bibl>
+	  </listBibl>
+	  
+          <listBibl>
             <head>Bibliografija</head>
-	    <bibl>Simon Krek. Doktorska disertacija</bibl>
+	    <bibl xml:id="krek-phd">Simon Krek. Doktorska disertacija. 2011.</bibl>
 	  </listBibl>
 	</div>
       </div>
