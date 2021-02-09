@@ -49,7 +49,7 @@
    <xsl:param name="autoToc">false</xsl:param>
    <xsl:param name="tocFront">false</xsl:param>
    <xsl:param name="tocBack">true</xsl:param>
-   <xsl:param name="tocDepth">2</xsl:param>
+   <xsl:param name="tocDepth">1</xsl:param>
    <xsl:param name="subTocDepth">-1</xsl:param>
    <xsl:param name="numberFigures"/>
    <xsl:param name="footnoteBackLink">true</xsl:param>
@@ -58,8 +58,8 @@
    
    <xsl:param name="numberHeadings">true</xsl:param>
    <xsl:param name="numberParagraphs">true</xsl:param>
-   <xsl:param name="preQuote">“</xsl:param>
-   <xsl:param name="postQuote">”</xsl:param>
+   <xsl:param name="preQuote">»</xsl:param>
+   <xsl:param name="postQuote">«</xsl:param>
    
    <xsl:param name="biblioStyle"></xsl:param>
    <xsl:param name="consecutiveFNs">false</xsl:param>
