@@ -78,10 +78,11 @@
       
       <div xml:id="sec-tok">
 	<head>Tokenizacija in stavčna segmentacija</head>
+	<byline>Simon Krek, Tomaž Erjavec</byline>
 	<docAuthor>Simon Krek</docAuthor>
 	<docAuthor>Tomaž Erjavec</docAuthor>
 	<docAuthor>Nikola Ljubešić</docAuthor>
-	<divGen type="subToc"/>
+	<divGen type="subtoc"/>
 	<div xml:id="sec-tok-intro">
 	  <head>Uvod v tokenizacijo in stavčno segmentacijo</head>
 	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil) v
@@ -172,16 +173,16 @@
 	</div>
 	
 	<div xml:id="sec-tok-bib">
+          <head>Bibliografija</head>
+          <listBibl>
+            <head>Bibliografija</head>
+	    <bibl xml:id="krek-phd">Simon Krek. Doktorska disertacija. 2011.</bibl>
+	  </listBibl>
           <listBibl>
             <head>Viri</head>
 	    <bibl xml:id="ssj500k2.2">Krek, Simon; et al., 2019, Training corpus ssj500k 2.2, Slovenian
 	    language resource repository CLARIN.SI,
 	    <ref target="http://hdl.handle.net/11356/1210">http://hdl.handle.net/11356/1210</ref>.</bibl>
-	  </listBibl>
-	  
-          <listBibl>
-            <head>Bibliografija</head>
-	    <bibl xml:id="krek-phd">Simon Krek. Doktorska disertacija. 2011.</bibl>
 	  </listBibl>
 	</div>
       </div>
