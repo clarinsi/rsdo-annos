@@ -12,7 +12,7 @@
       </titleStmt>
       <publicationStmt>
         <publisher>CLARIN.SI</publisher>
-        <date>2020-02-09</date>
+        <date>2020-02-10</date>
         <availability status="free">
           <licence>http://creativecommons.org/licenses/by/4.0/</licence>
           <p xml:lang="sl">To delo je ponujeno pod
@@ -66,22 +66,46 @@
     <body>
       <div xml:id="sec-intro">
         <head>Uvod</head>
+	<p>Namen opisa označevalnih ravni, je na enem mestu zbrati informacije o vseh
+	ravneh jezikoslovnega označevanja, ki se že uporabljajo v korpusih slovenskega
+	jezika, oz. je njihova uporaba predvidena v sklopu projekta <q>Razvoj slovenščine
+	v digitalnem okolju</q> oz. na kratko <ref
+	target="https://www.slovenscina.eu/">RSDO</ref>.</p>
         
-	<div xml:id="sec-struct">
+	<div xml:id="sec-intro-struct">
           <head>Struktura opisa</head>
+	  <p>Opis je strukturiran po ravneh označevanja, znotraj vsake ravni pa podamo:
+	  <list>
+	    <item><emph>Uvod</emph>, ki na kratko opiše raven označevana, opozori na nekatere njene
+	    posebnosti, in poda povezave na projekt in publikacije, ki so pripomogle k
+	    njenemu razvoju;</item>
+	    <item><emph>Popis orodij</emph>, s katerimi lahko avtomatsko označimo besedilo
+	    na tej ravni;</item>
+	    <item><emph>Specifikacije</emph>, ki so povezave do strojno berljivih datotek
+	    (npr. v tabelarični obliki ali v XML), ki se lahko uporabljajo za validacijo,
+	    pretvorbo ali učenje računalniških modelov za označevanje te ravni</item>
+	    <item><emph>Smernice</emph>, ki so povezave do človeško berljivih (npr. v PDF
+	    ali HTML) priročnikov, namenjenih anotatorjem za ročno označevanje korpusov na
+	    tej ravni;</item>
+	    <item><emph>Bibilografija</emph>, ki na enem mestu združi vse vire in
+	    publikacije, vezane na to označevalno raven.</item>
+	  </list>
+	  </p>
         </div>
         
-	<div xml:id="sec-workflow">
-          <head>Postopek dopolnjevanja opisa</head>
+	<div xml:id="sec-intro-workflow">
+          <head>Tehnična izvedba in postopek dopolnjevanja</head>
+	  <p>Opis je izvorno zapisan v TEI in domuje na GitHubu, na projektu <ref
+	  target="https://github.com/clarinsi/rsdo-annos">github.com/clarinsi/rsdo-annos</ref>. S </p>
         </div>
       </div>
       
-      <div xml:id="sec-tok">
+      <div xml:id="sec-token">
 	<head>Tokenizacija in stavčna segmentacija</head>
 	<byline>Simon Krek, Tomaž Erjavec, Nikola Ljubešić</byline>
 	<divGen type="subtoc"/>
-	<div xml:id="sec-tok-intro">
-	  <head>Uvod v tokenizacijo in stavčno segmentacijo</head>
+	<div xml:id="sec-token-intro">
+	  <head>Uvod v tokenizacijo</head>
 	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil)
 	  v besedilu. Tokenizacija je tipično združena s stavčno segmentacijo, ki razdeli
 	  besedilo na posamezne stavko oz. povedi in v nadaljevanju bomo z izrazom
@@ -90,9 +114,10 @@
 	  <p>Tokenizacija je na prvi pogled enostavna, vendar so v jeziku pojavi, ki
 	  naredijo natančno tokenizacijo problematično:
 	  <list>
-	    <item>Krajšave, kot so npr. <q>dr.</q>, <q>itd.</q>, saj je pika del pojavnice, ob
-	    tem pa pika sicer tudi zaključi stavek, pri krajšavah pa to ni nujno. Poleg tega
-	    so krajšave lahko tudi dvoumne z navadnimi besedami, npr. <q>xxx.</q> ... </item>
+	    <item>Krajšave, kot so npr. <mentioned>dr.</mentioned>, <q>itd.</q>, saj je
+	    pika del pojavnice, ob tem pa pika sicer tudi zaključi stavek, pri krajšavah
+	    pa to ni nujno. Poleg tega so krajšave lahko tudi dvoumne z navadnimi
+	    besedami, npr. <q>xxx.</q> ... </item>
 	    <item>Pri besedah, ki vsebujejo ločila (kot npr. <q>le-teh</q> ali <q>m²</q>) ni a
 	    priori jasno ali naj bodo tokenizirani v več pojavnic, ali v eno. To je
 	    problematično kadar se uporabnik ne zaved načel označevanja, in išče eno
@@ -275,7 +300,7 @@
 		. ¶ Zrihtamo , ko utegnemo . ¶ ( PS : tudi v veselje " konkurence "
 		;)</q>.
 		</item>
-		<item>Merilo za konec stavka je predvsem ločilo, ki deluje kot končno v¸
+		<item>Merilo za konec stavka je predvsem ločilo, ki deluje kot končno v
 		stavku, npr. pika, klicaj, vprašaj, narekovaj ali večpičje (<q>Kaj praviš
 		? ¶ Aha !</q>).</item>
 		<item>Če ni dobrega razloga, da nekaj obravnavamo kot dva stavka, naj
@@ -289,7 +314,7 @@
 		<list type="ordered">
 		  <item>Večpičje
 		  <list type="ordered">
-		    <item>¸Ponavadi je končno ločilo (<q>@SLO_Super_Visor po moje se jo
+		    <item>Ponavadi je končno ločilo (<q>@SLO_Super_Visor po moje se jo
 		    izogiba kot hudič križa. ¶ Glavn da on spet laja … ¶ :-)))))</q>).</item>
 		    <item>Včasih označuje zgolj elipso ali zamolk sredi stavka – v
 		    takšnem primeru ni končno ločilo /<q>To se mi zdi
@@ -324,7 +349,7 @@
 	  </div>
 	</div>
 	
-	<div xml:id="sec-tok-bib">
+	<div xml:id="sec-token-bib">
           <head>Bibliografija</head>
           <listBibl>
             <head>Bibliografija</head>
@@ -349,6 +374,33 @@
 	</div>
       </div>
       
+      <div xml:id="sec-norm">
+	<head>Normalizacija</head>
+      </div>
+      <div xml:id="sec-msd">
+	<head>Oblikoskladenjsko označevanje</head>
+      </div>      
+      <div xml:id="sec-lem">
+	<head>Lematizacija</head>
+      </div>
+      <div xml:id="sec-syn">
+	<head>Skladnja</head>
+      </div>
+      <div xml:id="sec-ner">
+	<head>Imenske entitete</head>
+      </div>
+      <div xml:id="sec-nerlnk">
+	<head>Povezovanje entitet</head>
+      </div>
+      <div xml:id="sec-coref">
+	<head>Koreferenčnost</head>
+      </div>
+      <div xml:id="sec-vmwu">
+	<head>Glagolske večbesedne enote</head>
+      </div>
+      <div xml:id="sec-semrole">
+	<head>Udeleženske vloge</head>
+      </div>
     </body>
   </text>
 </TEI>
