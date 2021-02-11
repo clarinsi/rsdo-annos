@@ -165,7 +165,7 @@
 	    </list>
 	    </p>
 	    <p>Lokalne datoteke za tokenizacijo so dostopne v mapi
-	    <ref target="token/">token/</ref>.</p>
+	    <ref target="data/token/">data/token/</ref>.</p>
 	  </div>
 
 	  <div xml:id="sec-tokstd-guide">
