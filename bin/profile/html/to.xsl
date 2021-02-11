@@ -15,8 +15,8 @@
    <xsl:preserve-space elements="head p li span hi"/>
 
    <!-- Use local copy -->
-   <xsl:param name="cssFile">css/tei.css</xsl:param>
-   <xsl:param name="cssPrintFile">css/tei-print.css</xsl:param>
+   <xsl:param name="cssFile">tei.css</xsl:param>
+   <xsl:param name="cssPrintFile">tei-print.css</xsl:param>
    <!--xsl:param name="cssFile">https://www.tei-c.org/release/xml/tei/stylesheet/tei.css</xsl:param-->
    <!--xsl:param name="cssPrintFile">https://www.tei-c.org/release/xml/tei/stylesheet/tei-print.css</xsl:param-->
 
