@@ -164,8 +164,8 @@
 	      </item>
 	    </list>
 	    </p>
-	    <p>Lokalne datoteke za tokenizacijo so dostopne v mapi
-	    <ref target="data/token/">data/token/</ref>.</p>
+	    <p>Lokalne datoteke za tokenizacijo so dostopne v GitHub mapi
+	    <ref target="https://github.com/clarinsi/rsdo-annos/tree/main/data/token">data/token/</ref>.</p>
 	  </div>
 
 	  <div xml:id="sec-tokstd-guide">
