@@ -42,7 +42,7 @@
       <change when="2021-02-09">Tomaž Erjavec: prvi osnutek.</change>
     </revisionDesc>
   </teiHeader>
-  <text>
+  <text xml:lang="sl">
     <front>
       <titlePage>
         <docTitle>
@@ -67,9 +67,8 @@
       <div xml:id="sec-intro">
         <head>Uvod</head>
 	<p>Namen opisa označevalnih ravni, je na enem mestu zbrati informacije o vseh
-	ravneh jezikoslovnega označevanja, ki se že uporabljajo v korpusih slovenskega
-	jezika, oz. je njihova uporaba predvidena v sklopu projekta <q>Razvoj slovenščine
-	v digitalnem okolju</q> oz. na kratko <ref
+	ravneh jezikoslovnega označevanja, katerih uporaba je predvidena v sklopu
+	projekta <q>Razvoj slovenščine v digitalnem okolju</q> oz. na kratko <ref
 	target="https://www.slovenscina.eu/">RSDO</ref>.</p>
         
 	<div xml:id="sec-intro-struct">
@@ -83,21 +82,68 @@
 	    na tej ravni;</item>
 	    <item><emph>Specifikacije</emph>, ki so povezave do strojno berljivih datotek
 	    (npr. v tabelarični obliki ali v XML), ki se lahko uporabljajo za validacijo,
-	    pretvorbo ali učenje računalniških modelov za označevanje te ravni</item>
+	    pretvorbo ali učenje računalniških modelov za označevanje te ravni;</item>
 	    <item><emph>Smernice</emph>, ki so povezave do človeško berljivih (npr. v PDF
 	    ali HTML) priročnikov, namenjenih anotatorjem za ročno označevanje korpusov na
 	    tej ravni;</item>
 	    <item><emph>Bibilografija</emph>, ki na enem mestu združi vse vire in
 	    publikacije, vezane na to označevalno raven.</item>
 	  </list>
+	  Velja opomba, da je ena raven označevanja lahko razdeljana še na podzvrsti,
+	  predvsem glede na vrsto slovenščine, ki se obravnava: privzeta je sodobna
+	  standardna slovenščina, dodatno pa še sodobna nestandardna slovenščina (za
+	  uporabniško generirane vsebine) in starejša slovenščina (za zgodovisnke
+	  vire).
 	  </p>
+	  
         </div>
         
-	<div xml:id="sec-intro-workflow">
-          <head>Tehnična izvedba in postopek dopolnjevanja</head>
-	  <p>Opis je izvorno zapisan v TEI in domuje na GitHubu, na projektu
-	  <ref target="https://github.com/clarinsi/rsdo-annos">github.com/clarinsi/rsdo-annos</ref>.</p>
+	<div xml:id="sec-intro-techno">
+          <head>Tehnična izvedba</head>
+
+	  <list>
+	    <item>Opis je izvorno zapisan v TEI in domuje na GitHubu, na projektu <ref
+	    target="https://github.com/clarinsi/rsdo-annos">github.com/clarinsi/rsdo-annos</ref>.</item>
+	    <item>Iz zapisa TEI se avtomatsko (z uporabo <ref
+	    target="https://github.com/TEIC/Stylesheets">TEI Stylesheets</ref> in
+	    profilom za HTML v direktoriju <ref
+	    target="https://github.com/clarinsi/rsdo-annos/tree/main/bin"><hi>bin/</hi></ref>
+	    na projektu GitHub) ustvari berljivo pretvorbo opisa, ki je dostopna na <ref
+	    target="https://clarinsi.github.io/rsdo-annos/">https://clarinsi.github.io/rsdo-annos/</ref>.</item>
+	    <item>Na projektu GitHub so zbrane tudi specifikacije (torej strojno berljive
+	    datoteke), ki jih najedmo v direktoriju <ref
+	    target="https://github.com/clarinsi/rsdo-annos/tree/main/data"><hi>data/</hi></ref>.</item>
+	    <item>Smernice v PDF oz. DOCX se, za razliko od specifikacij, zbirajo na
+	    spletni strani CLARIN.SI, krovna stran zanje je <ref
+	    target="https://www.clarin.si/info/rsdo-anot/">https://www.clarin.si/info/rsdo-anot/</ref>.
+	    Alternativa bi bila, da se shranijo kar v repozitorij, čeprav je
+	    problematično, da repozitorij CLARIN.SI sicer ne sprejema samo
+	    dokumentacije oz. PDF, datotek Word pa sploh ne, cf. razdelek <ref
+	    target="https://www.clarin.si/repository/xmlui/page/data?locale-attribute=en#binary">Accepted
+	    binary formats</ref>.</item>
+	  </list>
         </div>
+
+	<div xml:id="sec-intro-workflow">
+          <head>Postopek dopolnjevanja</head>
+
+	  <list>
+	    <item>Vsaj v prvi fazi, se bo opis samo skliceval na obstoječe specifikacije
+	    oz. smernice. Smernice bodo kopirane na namensko strani CLARIN.SI <ref
+	    target="https://www.clarin.si/info/rsdo-anot/">rsdo-anot</ref></item>
+	    <item>Kjer je to smiselno, se bodo v <ref
+	    target="https://github.com/clarinsi/rsdo-annos/tree/main/data"><hi>data/</hi></ref>
+	    zapisane strojno berljive datoteke za posamezne nivoje označevanja, s
+	    kratkim opisom v README tega direktorija.</item>
+	    <item>Obstoječe in stabilne smernice se lahko iz izvornega zapisa v DOCX z
+	    uporabo <ref target="https://nl.ijs.si/tei/convert/">konverterja</ref>
+	    pretvorijo v TEI, in rezultat vključi neposredno v opis.</item>
+	    <item>Za nove smernice za RSDO je verjetno najbolj smiselno, da se
+	    ustvarjajo v G'docs, na CLARIN.SI se pa shranijo šele, ko so končane.
+	    Opis se lahko sklicuje že na stran G'doc, njihovo besedilo se pa vključi v
+	    opis šele, ko so shranjene na CLARIN.SI</item>
+	  </list>
+	</div>
       </div>
       
       <div xml:id="sec-token">

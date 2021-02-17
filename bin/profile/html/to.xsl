@@ -34,7 +34,7 @@
     <xsl:param name="feedbackURL">mailto:info@clarin.si</xsl:param>
     
    <!-- The language to use when generating text (use ISO 2-letter codes) -->
-   <xsl:param name="documentationLanguage">slv</xsl:param>
+   <xsl:param name="documentationLanguage">sl</xsl:param>
    <!-- The language the text is in (use ISO 2-letter codes) -->
    <xsl:param name="doclang">sl</xsl:param>
    <xsl:param name="lang">sl</xsl:param>
