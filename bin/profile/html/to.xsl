@@ -46,8 +46,8 @@
    <xsl:param name="outputEncoding">utf-8</xsl:param>
    <xsl:param name="splitLevel">-1</xsl:param>
    
-   <xsl:param name="autoToc">false</xsl:param>
-   <xsl:param name="tocFront">false</xsl:param>
+   <xsl:param name="autoToc">true</xsl:param>
+   <xsl:param name="tocFront">true</xsl:param>
    <xsl:param name="tocBack">true</xsl:param>
    <xsl:param name="tocDepth">1</xsl:param>
    <xsl:param name="subTocDepth">4</xsl:param>

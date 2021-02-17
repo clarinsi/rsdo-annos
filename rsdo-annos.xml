@@ -72,7 +72,7 @@
 	v digitalnem okolju</q> oz. na kratko <ref
 	target="https://www.slovenscina.eu/">RSDO</ref>.</p>
         
-	<divGen type="toc"/>
+	<divGen type="subtoc"/>
 
 	<div xml:id="sec-intro-struct">
           <head>Struktura opisa</head>
@@ -97,8 +97,8 @@
         
 	<div xml:id="sec-intro-workflow">
           <head>Tehnična izvedba in postopek dopolnjevanja</head>
-	  <p>Opis je izvorno zapisan v TEI in domuje na GitHubu, na projektu <ref
-	  target="https://github.com/clarinsi/rsdo-annos">github.com/clarinsi/rsdo-annos</ref>. S </p>
+	  <p>Opis je izvorno zapisan v TEI in domuje na GitHubu, na projektu
+	  <ref target="https://github.com/clarinsi/rsdo-annos">github.com/clarinsi/rsdo-annos</ref>.</p>
         </div>
       </div>
       
