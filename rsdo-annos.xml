@@ -201,7 +201,7 @@
             nadomestek zanje pa lahko služijo naslednji viri:
 	    <list>
 	      <item>Korpus ssj500k, kjer je bila tokenizacija in stavčna segmentacija ročno preverjena
-	      (<ref target="#ssj500k2.2">Krek et al., 2019</ref>).</item>
+	      (<ref target="#ssj500k2.2-token">Krek et al., 2019</ref>).</item>
 	      <item>Seznam krajšav slovenskega jezika
 	      <ref target="https://github.com/clarinsi/reldi-tokeniser/blob/master/sl.abbrev">sl.abbrev</ref>,
 	      ki je del orodja
@@ -209,8 +209,9 @@
 	      </item>
 	    </list>
 	    </p>
-	    <p>Lokalne datoteke za tokenizacijo so dostopne v GitHub mapi
-	    <ref target="https://github.com/clarinsi/rsdo-annos/tree/main/data/token">data/token/</ref>.</p>
+	    <p>Lokalne datoteke za tokenizacijo so dostopne v direktoriju <ref
+	    target="https://github.com/clarinsi/rsdo-annos/tree/main/data/token/"><hi>data/token</hi></ref>.
+	    </p>
 	  </div>
 
 	  <div xml:id="sec-tokstd-guide">
@@ -414,7 +415,7 @@
 	    Holdt, Špela, 2016, CMC training corpus Janes-Norm 1.2, Slovenian language
 	    resource repository CLARIN.SI,
 	    <ref target="http://hdl.handle.net/11356/1084">http://hdl.handle.net/11356/1084</ref>.</bibl>
-	    <bibl xml:id="ssj500k2.2">Krek, Simon; et al., 2019, Training corpus ssj500k 2.2, Slovenian
+	    <bibl xml:id="ssj500k2.2-token">Krek, Simon; et al., 2019, Training corpus ssj500k 2.2, Slovenian
 	    language resource repository CLARIN.SI,
 	    <ref target="http://hdl.handle.net/11356/1210">http://hdl.handle.net/11356/1210</ref>.</bibl>
 	  </listBibl>
@@ -447,6 +448,67 @@
       </div>
       <div xml:id="sec-semrole">
 	<head>Udeleženske vloge</head>
+	<byline>Simon Krek, Polona Gantar, Kaja Dobrovoljc, Iza Škrjanec</byline>
+	<div xml:id="sec-semrole-intro">
+	  <head>Uvod v udeleženske vloge</head>
+	  <p>Udeleženske vloge so ...</p>
+	</div>
+	<div xml:id="sec-semrole-tools">
+          <head>Orodja za označevanje udeleženskih vlog</head>
+	  <p>Za avtomatično označevanje udeleženskih vlog še ne obstaja orodje(?).
+	  Za ročno označevanje korpusov z udeleženskim vlogam sta na voljo dve orodji:
+	  <list>
+	    <item>Q-CAT: <ref
+	    target="http://hdl.handle.net/11356/1282">http://hdl.handle.net/11356/1282</ref>.
+	    Orodje, s katerim lahko označujemo tudi druge jezikoslovne
+	    ravni, deluje v okolju Windows, in ga je potrebno
+	    instalirati na svoj računalnik.
+	    </item>
+	    <item>WebAnno: <ref
+	    target="https://www.clarin.si/webanno/">https://www.clarin.si/webanno/</ref>.
+	    Orodje, s katerim lahko označujemo tudi druge jezikoslovne
+	    ravni, je instalirano na spletu. Za uporabniško ime je
+	    potrebno zaprositi na <ref
+	    target="mailto:info@clarin.si">info@clarin.si</ref>, ravno
+	    tako pa je nato potrebno konfigurirati projekt za
+	    označevanje.</item>
+	  </list>
+	  </p>
+	</div>
+	<div xml:id="sec-semrole-specs">
+          <head>Specifikacije za udeleženske vloge</head>
+            <p>Za udeleženske vloge obstajajo naslednje strojno berljive datoteke:
+	    <list>
+	      <item>Korpus ssj500k, kjer je bila tokenizacija in stavčna segmentacija ročno preverjena
+	      (<ref target="#ssj500k2.2-semrole">Krek et al., 2019</ref>).</item>
+	    </list>
+	    </p>
+	    <p>Lokalne datoteke za udeleženske vloge so dostopne v direktoriju <ref
+	    target="https://github.com/clarinsi/rsdo-annos/tree/main/data/semrole/"><hi>data/semrole</hi></ref>.</p>
+	</div>
+	<div xml:id="sec-semrole-guide">
+          <head>Smernice za označevanje udeleženskih vlog</head>
+	  <p>Za označevanje udeleženskih vlog smernice ne obstajajo, vendar je postopek pojasnjen v
+	  <ref target="#jtdh16-semroles">Krek et al. (2016)</ref>.
+	  </p>
+	</div>
+	<div xml:id="sec-semrole-bib">
+          <head>Bibliografija</head>
+          <listBibl>
+            <head>Bibliografija</head>
+	    <bibl xml:id="jtdh16-semroles">KREK, Simon, GANTAR, Polona, DOBROVOLJC, Kaja,
+	    ŠKRJANEC, Iza. Označevanje udeleženskih vlog v učnem korpusu za slovenščino.  Zbornik
+	    konference Jezikovne tehnologije in digitalna humanistika. Znanstvena založba
+	    Filozofske fakultete. 2016. Str. 106-110, ISBN 978-961-237-862-2. [<ref
+	    target="https://www.clarin.si/info/wp-content/uploads/2021/02/JTDH-2016_Krek-et-al_Oznacevanje-udelezenskih-vlog-v-ucnem-korpusu-za-slovenscino.pdf">pdf</ref>]</bibl>
+	  </listBibl>
+	  <listBibl>
+	    <head>Viri</head>
+	    <bibl xml:id="ssj500k2.2-semrole">Krek, Simon; et al., 2019, Training corpus ssj500k
+	    2.2, Slovenian language resource repository CLARIN.SI, <ref
+	    target="http://hdl.handle.net/11356/1210">http://hdl.handle.net/11356/1210</ref>.</bibl>
+	  </listBibl>
+	</div>
       </div>
     </body>
   </text>

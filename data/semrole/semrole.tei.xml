@@ -1,0 +1,102 @@
+<taxonomy xmlns="http://www.tei-c.org/ns/1.0" xml:id="SRL">
+  <category xml:id="ACT">
+    <catDesc xml:lang="sl">vršilec</catDesc>
+    <catDesc xml:lang="en">actor</catDesc>
+  </category>
+  <category xml:id="PAT">
+    <catDesc xml:lang="sl">prizadeto</catDesc>
+    <catDesc xml:lang="en">patient</catDesc>
+  </category>
+  <category xml:id="REC">
+    <catDesc xml:lang="sl">prejemnik</catDesc>
+    <catDesc xml:lang="en">receiver</catDesc>
+  </category>
+  <category xml:id="ORIG">
+    <catDesc xml:lang="sl">izvor</catDesc>
+    <catDesc xml:lang="en">origin</catDesc>
+  </category>
+  <category xml:id="RESLT">
+    <catDesc xml:lang="sl">učinek</catDesc>
+    <catDesc xml:lang="en">result</catDesc>
+  </category>
+  <category xml:id="TIME">
+    <catDesc xml:lang="sl">čas</catDesc>
+    <catDesc xml:lang="en">time</catDesc>
+  </category>
+  <category xml:id="DUR">
+    <catDesc xml:lang="sl">trajanje</catDesc>
+    <catDesc xml:lang="en">duration</catDesc>
+  </category>
+  <category xml:id="FREQ">
+    <catDesc xml:lang="sl">pogostnost</catDesc>
+    <catDesc xml:lang="en">frequency</catDesc>
+  </category>
+  <category xml:id="LOC">
+    <catDesc xml:lang="sl">kraj</catDesc>
+    <catDesc xml:lang="en">location</catDesc>
+  </category>
+  <category xml:id="SOURCE">
+    <catDesc xml:lang="sl">začetna lokacija</catDesc>
+    <catDesc xml:lang="en">source</catDesc>
+  </category>
+  <category xml:id="GOAL">
+    <catDesc xml:lang="sl">končna lokacija</catDesc>
+    <catDesc xml:lang="en">goal</catDesc>
+  </category>
+  <category xml:id="EVENT">
+    <catDesc xml:lang="sl">dogodek</catDesc>
+    <catDesc xml:lang="en">event</catDesc>
+  </category>
+  <category xml:id="AIM">
+    <catDesc xml:lang="sl">namen</catDesc>
+    <catDesc xml:lang="en">aim</catDesc>
+  </category>
+  <category xml:id="CAUSE">
+    <catDesc xml:lang="sl">vzrok</catDesc>
+    <catDesc xml:lang="en">cause</catDesc>
+  </category>
+  <category xml:id="CONTR">
+    <catDesc xml:lang="sl">protivnost</catDesc>
+    <catDesc xml:lang="en">contradiction</catDesc>
+  </category>
+  <category xml:id="COND">
+    <catDesc xml:lang="sl">pogoj</catDesc>
+    <catDesc xml:lang="en">condition</catDesc>
+  </category>
+  <category xml:id="REG">
+    <catDesc xml:lang="sl">ozir</catDesc>
+    <catDesc xml:lang="en">regard</catDesc>
+  </category>
+  <category xml:id="ACMP">
+    <catDesc xml:lang="sl">spremstvo</catDesc>
+    <catDesc xml:lang="en">accompaniment</catDesc>
+  </category>
+  <category xml:id="RESTR">
+    <catDesc xml:lang="sl">omejitev</catDesc>
+    <catDesc xml:lang="en">restriction</catDesc>
+  </category>
+  <category xml:id="MANN">
+    <catDesc xml:lang="sl">način</catDesc>
+    <catDesc xml:lang="en">manner</catDesc>
+  </category>
+  <category xml:id="MEANS">
+    <catDesc xml:lang="sl">sredstvo</catDesc>
+    <catDesc xml:lang="en">means</catDesc>
+  </category>
+  <category xml:id="QUANT">
+    <catDesc xml:lang="sl">količina</catDesc>
+    <catDesc xml:lang="en">quantity</catDesc>
+  </category>
+  <category xml:id="MWPRED">
+    <catDesc xml:lang="sl">zveza z nedoločnikom</catDesc>
+    <catDesc xml:lang="en">multiword predicate</catDesc>
+  </category>
+  <category xml:id="MODAL">
+    <catDesc xml:lang="sl">zveza z modalnim glagolom</catDesc>
+    <catDesc xml:lang="en">modal</catDesc>
+  </category>
+  <category xml:id="PHRAS">
+    <catDesc xml:lang="sl">frazeološka zveza</catDesc>
+    <catDesc xml:lang="en">phraseme</catDesc>
+  </category>
+</taxonomy>
