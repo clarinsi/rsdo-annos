@@ -33,11 +33,11 @@
     <xsl:param name="institution">CLARIN.SI</xsl:param>
     <xsl:param name="feedbackURL">mailto:info@clarin.si</xsl:param>
     
-   <!-- The language to use when generating text (use ISO 2-letter codes -->
-   <xsl:param name="documentationLanguage">sl</xsl:param>
-   <xsl:param name="lang">sl</xsl:param>
+   <!-- The language to use when generating text (use ISO 2-letter codes) -->
+   <xsl:param name="documentationLanguage">slv</xsl:param>
    <!-- The language the text is in (use ISO 2-letter codes) -->
    <xsl:param name="doclang">sl</xsl:param>
+   <xsl:param name="lang">sl</xsl:param>
    
    <xsl:param name="STDOUT">true</xsl:param>
    <!--xsl:param name="STDOUT">false</xsl:param>
@@ -46,12 +46,12 @@
    <xsl:param name="outputEncoding">utf-8</xsl:param>
    <xsl:param name="splitLevel">-1</xsl:param>
    
-   <xsl:param name="autoToc">true</xsl:param>
-   <xsl:param name="tocFront">true</xsl:param>
+   <xsl:param name="autoToc">false</xsl:param>
+   <xsl:param name="tocFront">false</xsl:param>
    <xsl:param name="tocBack">true</xsl:param>
-   <xsl:param name="tocDepth">1</xsl:param>
-   <xsl:param name="subTocDepth">4</xsl:param>
-   <xsl:param name="numberFigures"/>
+   <xsl:param name="tocDepth">5</xsl:param>
+   <xsl:param name="subTocDepth">5</xsl:param>
+   <xsl:param name="numberFigures">true</xsl:param>
    <xsl:param name="footnoteBackLink">true</xsl:param>
    <!-- CRASHES CONVERSION:
    <xsl:param name="autoEndNotes">true</xsl:param-->

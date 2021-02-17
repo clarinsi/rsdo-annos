@@ -72,8 +72,6 @@
 	v digitalnem okolju</q> oz. na kratko <ref
 	target="https://www.slovenscina.eu/">RSDO</ref>.</p>
         
-	<divGen type="subtoc"/>
-
 	<div xml:id="sec-intro-struct">
           <head>Struktura opisa</head>
 	  <p>Opis je strukturiran po ravneh označevanja, znotraj vsake ravni pa podamo:
@@ -105,7 +103,6 @@
       <div xml:id="sec-token">
 	<head>Tokenizacija in stavčna segmentacija</head>
 	<byline>Simon Krek, Tomaž Erjavec, Nikola Ljubešić</byline>
-	<divGen type="subtoc"/>
 	<div xml:id="sec-token-intro">
 	  <head>Uvod v tokenizacijo</head>
 	  <p>Tokenizacij je proces označevanja posameznih pojavnic (torej besed in ločil)
