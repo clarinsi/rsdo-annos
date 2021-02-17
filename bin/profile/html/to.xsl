@@ -50,7 +50,7 @@
    <xsl:param name="tocFront">false</xsl:param>
    <xsl:param name="tocBack">true</xsl:param>
    <xsl:param name="tocDepth">1</xsl:param>
-   <xsl:param name="subTocDepth">-1</xsl:param>
+   <xsl:param name="subTocDepth">4</xsl:param>
    <xsl:param name="numberFigures"/>
    <xsl:param name="footnoteBackLink">true</xsl:param>
    <!-- CRASHES CONVERSION:

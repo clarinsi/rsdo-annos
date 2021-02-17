@@ -72,6 +72,8 @@
 	v digitalnem okolju</q> oz. na kratko <ref
 	target="https://www.slovenscina.eu/">RSDO</ref>.</p>
         
+	<divGen type="subtoc"/>
+
 	<div xml:id="sec-intro-struct">
           <head>Struktura opisa</head>
 	  <p>Opis je strukturiran po ravneh označevanja, znotraj vsake ravni pa podamo:
@@ -376,16 +378,16 @@
 	</div>
       </div>
       
-      <div xml:id="sec-norm">
+      <div xml:id="sec-norma">
 	<head>Normalizacija</head>
       </div>
-      <div xml:id="sec-msd">
+      <div xml:id="sec-morph">
 	<head>Oblikoskladenjsko označevanje</head>
       </div>      
-      <div xml:id="sec-lem">
+      <div xml:id="sec-lemma">
 	<head>Lematizacija</head>
       </div>
-      <div xml:id="sec-syn">
+      <div xml:id="sec-synt">
 	<head>Skladnja</head>
       </div>
       <div xml:id="sec-ner">
