@@ -1,0 +1,179 @@
+<taxonomy xmlns="http://www.tei-c.org/ns/1.0" xml:id="JOS-SYN">
+  <desc xml:lang="sl">Skladenjske povezave JOS</desc>
+  <desc xml:lang="en">JOS syntactic relations</desc>
+  <category xml:id="modra" corresp="#Root" xml:lang="sl">
+    <catDesc xml:lang="sl"><term>povezava na koren</term>: S povezavo modra povezujemo
+    abstraktno vozlišče stavka oz. povedi z elementi, iz katerih potekajo nadaljnje
+    drevesnične povezave. S to povezavo so tipično povezani stavčni povedki, eliptični
+    deli povedi brez povedka ali členkovni elementi znotraj stavka. S to povezavo so na
+    vozlišče povezane tudi vse pojavnice (besede ali ločila), ki nimajo eksplicitne
+    skladenjske vloge v povedi.</catDesc>
+  </category>
+  <category xml:id="del" corresp="#PPart">
+    <catDesc xml:lang="sl"><term>del povedka</term>: S povezavo del povezujemo dele
+    besednih zvez, pri katerih ne govorimo o prototipnem jedru ter določilu zveze, pač pa
+    zgolj o delih zveze. Tipično jo uporabljamo za dele zloženega povedka, pri čemer je
+    izvor osebna glagolska oblika oz. deležnik na –l, cilj so morfemi »ne«, »se«, »si«,
+    »bi« oz. oblike glagola »biti« v sestavljenih nesedanjiških časih, tj. »bo«, »je«
+    itd.</catDesc>
+  </category>
+  <category xml:id="dol" corresp="#Atr">
+    <catDesc xml:lang="sl"><term>določilo</term>: S povezavo dol povezujemo določujoči in
+    določani del podredne besedne zveze, tj. jedro in različne vrste prilastkov. Izhodišče
+    je jedro zveze, cilj pa beseda, ki jedro določa. Tipično jo uporabljamo pri
+    samostalniških besednih zvez (jedro je samostalnik), pridevniških oz. prislovnih
+    besednih zvez (jedro je pridevnik oz. prislov) ter za povezovanje delov zloženega
+    povedka: povedkovega določila in povedkovega prilastka (jedro je glagol »biti«
+    oz. polnopomenski glagol) ali pomožnih glagolov z jedrom.</catDesc>
+  </category>
+  <category xml:id="ena" corresp="#Sb">
+    <catDesc xml:lang="sl"><term>osebek</term>: S povezavo ena povezujemo dele stavkov
+    oz. povedi, ki bi jih tradicionalno lahko opredelili kot osebek, vendar tako označena
+    razmerja ne ustrezajo povsem klasični definiciji tega pojava. Na znotrajstavčni ravni
+    povezuje povedkovo vozlišče z nestavčnim osebkom stavka, pri čemer je izhodišče
+    razmerja jedro povedka, cilj razmerja pa jedro osebka. Na medstavčni ravni s to
+    povezavo povezujemo osebkove odvisnike z ustreznim glavnim stavkom. Izhodišče je jedro
+    povedka nadrednega stavka, cilj je jedro povedka v odvisniku.</catDesc>
+  </category>
+  <category xml:id="dve" corresp="#Obj">
+    <catDesc xml:lang="sl"><term>predmet</term>: S povezavo dve povezujemo dele stavkov
+    oz. povedi, ki bi jih tradicionalno lahko opredelili kot predmet stavka ali predmetni
+    odvisnik, vendar tako označena razmerja ne ustrezajo povsem klasični definiciji teh
+    dveh pojavov. Na znotrajstavčni ravni povezuje vozlišče povedka in nestavčni predmet
+    stavka. Izhodišče razmerja je jedro povedka, cilj je jedro predmeta. Na medstavčni
+    ravni s to povezavo povezujemo predmetne odvisnike z ustreznim glavnim
+    stavkom. Izhodišče je jedro povedka glavnega stavka, cilj je jedro povedka v
+    odvisniku.</catDesc>
+  </category>
+  <category xml:id="tri" corresp="#AdvM">
+    <catDesc xml:lang="sl"><term>prislovno določilo lastnosti</term>: S povezavo tri
+    povezujemo dele stavkov oz. povedi, ki bi jih tradicionalno lahko opredelili kot
+    prislovno določilo lastnosti ali lastnostni odvisnik, vendar tako označena razmerja ne
+    ustrezajo povsem klasični definiciji teh dveh pojavov. Na znotrajstavčni ravni
+    povezuje vozlišče povedka in nestavčno prislovno določilo lastnosti. Izhodišče
+    razmerja je jedro povedka, cilj je jedro prislovnega določila. Na medstavčnem nivoju s
+    to povezavo povezujemo lastnostne odvisnike oz. polstavke z ustreznim glavnim
+    stavkom. Izhodišče je jedro povedka glavnega stavka, cilj je jedro povedka v
+    odvisniku.</catDesc>
+  </category>
+  <category xml:id="štiri" corresp="#AdvO">
+    <catDesc xml:lang="sl"><term>ostala prislovna določila</term>: S povezavo štiri
+    povezujemo dele stavkov oz. povedi, ki bi jih tradicionalno lahko opredelili kot
+    prislovno določilo ali prislovni odvisnik (razen prislovnega določila lastnosti ali
+    lastnostnega odvisnika), vendar tako označena razmerja ne ustrezajo povsem klasični
+    definiciji teh pojavov. Na znotrajstavčni ravni povezuje vozlišče povedka in prislovno
+    določilo. Izhodišče razmerja jedro povedka, cilj je jedro prislovnega določila. Na
+    medstavčni ravni s to povezavo povezujemo odvisnike ustrezajočih tipov z ustreznim
+    glavnim stavkom. Izhodišče je jedro povedka glavnega stavka, cilj je jedro povedka v
+    odvisniku.</catDesc>
+  </category>
+  <category xml:id="prir" corresp="#Coord">
+    <catDesc xml:lang="sl"><term>priredje</term>: S povezavo prir povezujemo dele priredij
+    na besednozvezni ravni. Pri besednih zvezah povezujemo jedro prvega dela priredja z
+    jedrom drugega dela priredja, pri čemer je izhodišče v levem delu, cilj pa v desnem
+    delu priredja.</catDesc>
+  </category>
+  <category xml:id="vez" corresp="#Conj">
+    <catDesc xml:lang="sl"><term>veznik</term>: Povezavo vez uporabljamo v kombinaciji s
+    povezavo prir tako, da trije elementi, povezani s prir in vez, tvorijo trikotnik. S
+    povezavo vez povezujemo jedro drugega dela besednozveznega priredja in priredni veznik
+    ali priredno ločilo, če veznika ni.</catDesc>
+  </category>
+  <category xml:id="skup" corresp="#MWU">
+    <catDesc xml:lang="sl"><term>sestavljena pojavnica</term>: S povezavo skup povezujemo
+    besede, ki imajo zelo močno tendenco po sopojavljanju in tvorijo neke vrste večbesedne
+    enote, ne gre pa za klasične podredne ali priredne besedne zveze. S to povezavo
+    tipično označujemo besede, ki imajo variantni zapis skupaj ali narazen, nekatere
+    večbesedne veznike in podobne večbesedne enote.</catDesc>
+  </category>
+  <category xml:id="Root" corresp="#modra">
+    <catDesc xml:lang="en"><term>Root dependency</term>: Root forms a link between the
+    abstract node of the clause or sentence, as the source, with elements which form
+    further connections in a dependency tree. The targets are typically clause predicates,
+    predicateless elliptical parts of sentences or independent particles within a
+    sentence. Furthermore, it forms a link with all other tokens (word or punctuation)
+    without an explicit syntactic role in a sentence.</catDesc>
+  </category>
+  <category xml:id="PPart" corresp="#del">
+    <catDesc xml:lang="en"><term>Predicate part</term>: PPart forms a link between
+    elements without a dependency relation in the usual head-dependent sense which are
+    consequently defined merely as parts of a word phrase. Typically it is used to link
+    parts of verb phrases with the finite verb form or a participle ending in -l, as the
+    source, and morphemes »ne«, »se«, »si«, »bi«, or the forms of the auxiliary verb be
+    used to form future and past tenses, i. e. »bo«, »je«, etc., as the target.</catDesc>
+  </category>
+  <category xml:id="Atr" corresp="#dol">
+    <catDesc xml:lang="en"><term>Attribute</term>: Atr is used to link heads and their
+    dependents in word phrases. The source is the head of the phrase, the target is its
+    dependent. Typically it is used in noun phrases, adjectival and adverbial phrases or
+    to connect parts of complex verb phrases with modal verbs and non-finite verb forms,
+    as well as to link subject or object complements to the verb.</catDesc>
+  </category>
+  <category xml:id="Sb" corresp="#ena">
+    <catDesc xml:lang="en"><term>Subject</term>: Sb is used to link parts of clauses or
+    sentences that can be defined as traditional subjects. However, the nodes linked with
+    this relation do not comply entirely with the definition of a subject in traditional
+    grammars. On the clause level, it forms a link between the predicate node and the
+    subject node, with the head of the verb phrase in the predicate, as the source, and
+    the head of the noun phrase or other kinds of phrases in the subject, as the
+    target. On the sentence level, it forms a link between the main clause and the subject
+    clause with the head of verb phrase in the main clause, as the source, and the head of
+    the verb phrase in the subject clause, as the target.</catDesc>
+  </category>
+  <category xml:id="Obj" corresp="#dve">
+    <catDesc xml:lang="en"><term>Object</term>: Obj is used to link parts of clauses or
+    sentences that can be defined as traditional objects. However, the nodes linked with
+    this relation do not comply entirely with the definition of an object in traditional
+    grammars. On the clause level, it forms a link between the predicate node and the
+    object node, with the head of the verb phrase in the predicate, as the source, and the
+    head of the noun phrase or other kinds of phrases in the object, as the target. On the
+    sentence level, it forms a link between the main clause and the object clause with the
+    head of verb phrase in the main clause, as the source, and the head of the verb phrase
+    in the object clause, as the target.</catDesc>
+  </category>
+  <category xml:id="AdvM" corresp="#tri">
+    <catDesc xml:lang="en"><term>Adverbial of manner</term>: AdvM is used to link parts of
+    clauses or sentences that can be defined as traditional adverbials of manner. However,
+    the nodes linked with this relation do not comply entirely with the definition of such
+    adverbials in traditional grammars. On the clause level, it forms a link between the
+    predicate node and the adverbial node, with the head of the verb phrase in the
+    predicate, as the source, and the head of the noun phrase or other kinds of phrases in
+    the adverbial, as the target. On the sentence level, it forms a link between the main
+    clause and the adverbial clause with the head of verb phrase in the main clause, as
+    the source, and the head of the verb phrase in the adverbial clause, as the
+    target.</catDesc>
+  </category>
+  <category xml:id="AdvO" corresp="#štiri">
+    <catDesc xml:lang="en"><term>Adverbial, other</term>: AdvO is used to link parts of
+    clauses or sentences that can be defined as traditional adverbials, with the exception
+    of adverbials of manner. However, the nodes linked with this relation do not comply
+    entirely with the definition of such adverbials in traditional grammars. On the clause
+    level, it forms a link between the predicate node and the adverbial node, with the
+    head of the verb phrase in the predicate, as the source, and the head of the noun
+    phrase or other kinds of phrases in the adverbial, as the target. On the sentence
+    level, it forms a link between the main clause and the adverbial clause with the head
+    of verb phrase in the main clause, as the source, and the head of the verb phrase in
+    the adverbial clause, as the target.</catDesc>
+  </category>
+  <category xml:id="Coord" corresp="#prir">
+    <catDesc xml:lang="en"><term>Coordination</term>: Coord is used to link parts of
+    coordinate structures on phrase level. It forms a link between the head of the first
+    part of the coordinate structure and the head of the second part of the structure. The
+    source is always the head in the left part of the structure and the target is the head
+    in the right part of the structure. </catDesc>
+  </category>
+  <category xml:id="Conj" corresp="#vez">
+    <catDesc xml:lang="en"><term>Conjunction</term>: Conj is used in combination with the
+    Coord relation to link three elements – connected with Coord and Conj – in a
+    triangle. Conj is used to link the head of the second part of the coordinate structure
+    on the phrase level, as the source, and the coordinating conjunction or punctuation
+    mark (if it functions as the coordinating conjunction), as the target.</catDesc>
+  </category>
+  <category xml:id="MWU" corresp="#skup">
+    <catDesc xml:lang="en"><term>Multi-word unit</term>: MWU is used to link words which
+    have a very strong tendency to appear together as a group forming a multiword unit and
+    do not show characteristics of a head-dependant phrase structure. Typically, this
+    relation is used to link words with a variant spelling with or without a space, some
+    multi-word conjunctions and similar elements.</catDesc>
+  </category>
+</taxonomy>
